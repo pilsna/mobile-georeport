@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KabelWeb", "KabelWeb\KabelWeb.csproj", "{09EC9219-2FED-4EFA-B3C8-C75AD226CDA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kabellaegning", "Kabellaegning\Kabellaegning.csproj", "{2F4831C5-C15D-4CD7-A9DF-2CA70B31A29F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy.Web", "Proxy.Web\Proxy.Web.csproj", "{F8816BCF-3AB0-4196-B813-D81D7BFBF407}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,14 +13,6 @@ Global
 		{09EC9219-2FED-4EFA-B3C8-C75AD226CDA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09EC9219-2FED-4EFA-B3C8-C75AD226CDA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09EC9219-2FED-4EFA-B3C8-C75AD226CDA9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2F4831C5-C15D-4CD7-A9DF-2CA70B31A29F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2F4831C5-C15D-4CD7-A9DF-2CA70B31A29F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2F4831C5-C15D-4CD7-A9DF-2CA70B31A29F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2F4831C5-C15D-4CD7-A9DF-2CA70B31A29F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F8816BCF-3AB0-4196-B813-D81D7BFBF407}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F8816BCF-3AB0-4196-B813-D81D7BFBF407}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F8816BCF-3AB0-4196-B813-D81D7BFBF407}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F8816BCF-3AB0-4196-B813-D81D7BFBF407}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
