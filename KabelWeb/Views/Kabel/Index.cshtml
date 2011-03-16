@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Kort";
+}
+@section JavaScriptIncludes
+{ 
+    <script type="text/javascript" src="@Url.Content("Scripts/Silverlight.js")" ></script>   
+}
+
+<table width="1000">
+    <tr>
+        <td style="background: #FFFFFF; width: 100%;">
+        </td>
+        <td>
+            <div id="silverlightControlHost" style="width: 705px; height: 500px; vertical-align: middle">
+                <object data="data:application/x-silverlight," type="application/x-silverlight-2"
+                    width="705px" height="500px">
+                    <param name="source" value="Content/Kabellaegning.xap" />
+                    <param name="onerror" value="onSilverlightError" />
+                    <param name="background" value="white" />
+                    <param name="minRuntimeVersion" value="3.0.40818.0" />
+                    <param name="autoUpgrade" value="true" />
+                    <param name='initParams' id='initParams' value='proxy=maps, mapServer=osi1110' runat='server' />
+                    <a href="http://go.microsoft.com/fwlink/?LinkID=149156&v=3.0.40818.0" style="text-decoration: none;">
+                        <img src="http://go.microsoft.com/fwlink/?LinkId=108181" alt="Get Microsoft Silverlight"
+                            style="border-style: none" />
+                    </a>
+                </object>
+                <iframe id='_sl_historyFrame' style='visibility: hidden; height: 0; width: 0; border: 0px'>
+                </iframe>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td style="background: #FFFFFF; width: 100%; height: 35px" colspan="2">
+            &nbsp;
+        </td>
+    </tr>
+</table>

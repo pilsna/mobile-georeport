@@ -1,0 +1,10 @@
+C:\dong_tfs\Projects\DONGEnergy.SD.Portal.SLWebPartWrapper\DONGEnergy.SD.Portal.SLWebpartWrapper\Proxy.Web\bin\Proxy.Web.dll
+C:\dong_tfs\Projects\DONGEnergy.SD.Portal.SLWebPartWrapper\DONGEnergy.SD.Portal.SLWebpartWrapper\Proxy.Web\bin\Proxy.Web.pdb
+C:\dong_tfs\Projects\DONGEnergy.SD.Portal.SLWebPartWrapper\DONGEnergy.SD.Portal.SLWebpartWrapper\Proxy.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\dong_tfs\Projects\DONGEnergy.SD.Portal.SLWebPartWrapper\DONGEnergy.SD.Portal.SLWebpartWrapper\Proxy.Web\obj\Debug\Proxy.Web.dll
+C:\dong_tfs\Projects\DONGEnergy.SD.Portal.SLWebPartWrapper\DONGEnergy.SD.Portal.SLWebpartWrapper\Proxy.Web\obj\Debug\Proxy.Web.pdb
+C:\dong_tfs\KabelWeb\Proxy.Web\bin\Proxy.Web.dll
+C:\dong_tfs\KabelWeb\Proxy.Web\bin\Proxy.Web.pdb
+C:\dong_tfs\KabelWeb\Proxy.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\dong_tfs\KabelWeb\Proxy.Web\obj\Debug\Proxy.Web.dll
+C:\dong_tfs\KabelWeb\Proxy.Web\obj\Debug\Proxy.Web.pdb

@@ -1,0 +1,65 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:local="clr-namespace:Kabellaegning">
+
+    <Style TargetType="local:ArrowControl">
+        <Setter Property="Title" Value="Fase 1" />
+        <Setter Property="Height" Value="30" />
+        <Setter Property="Background" Value="#FF629415" />
+        <Setter Property="SlitterBackground" Value="White" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="FontSize" Value="13.333" />
+        <Setter Property="HorizontalAlignment" Value="Right" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+
+        <Setter Property="Template">
+            <Setter.Value>
+
+                <!-- ControlTemplate -->
+                <ControlTemplate TargetType="local:ArrowControl">
+
+                    <Grid x:Name="ArrowControl">
+
+                        <Path 
+                            Stroke="{TemplateBinding SlitterBackground}" 
+                            Margin="0,0,0.006,0" 
+                            UseLayoutRounding="False" 
+                            Data="M6.8041239,25 L125.19588,25" 
+                            StrokeThickness="{TemplateBinding Height}" 
+                            StrokeEndLineCap="Triangle" 
+                            Stretch="Fill" 
+                            StrokeStartLineCap="Square" 
+                            RenderTransformOrigin="0.606,0.533" />
+                        
+                        <Path 
+                            Stroke="{TemplateBinding Background}" 
+                            Margin="0,0,8.667,0" 
+                            UseLayoutRounding="False" 
+                            Data="M6.8041239,25 L125.19588,25" 
+                            StrokeThickness="{TemplateBinding Height}" 
+                            StrokeEndLineCap="Triangle" 
+                            Stretch="Fill" 
+                            StrokeStartLineCap="Square" />
+                        
+                        <TextBlock 
+                            x:Name="ArrowText" 
+                            Margin="0,0,25,0" 
+                            Text="{TemplateBinding Title}" 
+                            TextWrapping="Wrap" 
+                            Foreground="{TemplateBinding Foreground}" 
+                            FontWeight="{TemplateBinding FontWeight}" 
+                            FontSize="{TemplateBinding FontSize}" 
+                            HorizontalAlignment="{TemplateBinding HorizontalAlignment}" 
+                            VerticalAlignment="{TemplateBinding VerticalAlignment}"/>
+                        
+                    </Grid>
+
+                </ControlTemplate>
+
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

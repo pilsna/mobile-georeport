@@ -1,0 +1,57 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="Kabellaegning.ProcesBar">
+
+    <UserControl.Resources>
+        <SolidColorBrush x:Name="SplitterBackground" Color="White"/>
+        <SolidColorBrush x:Name="DongDarkGreen" Color="DarkGreen"/>
+        <SolidColorBrush x:Name="DongLightGreen" Color="LightGreen"/>
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot" Background="White">
+
+        <StackPanel Orientation="Horizontal" Margin="0" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <Grid x:Name="Fase1" Canvas.ZIndex="3" Margin="8,0,0,0" Width="120" VerticalAlignment="Top">
+                <Path Stroke="{StaticResource SplitterBackground}" Margin="0,0,0.006,0" UseLayoutRounding="False" Data="M6.8041239,25 L125.19588,25" StrokeThickness="30" StrokeEndLineCap="Triangle" Stretch="Fill" StrokeStartLineCap="Square" RenderTransformOrigin="0.606,0.533" />
+                <Path x:Name="ProcesItem1" Stroke="{StaticResource DongDarkGreen}" Margin="0,0,8.667,0" UseLayoutRounding="False" Data="M6.8041239,25 L125.19588,25" StrokeThickness="30" StrokeEndLineCap="Triangle" Stretch="Fill" StrokeStartLineCap="Square" />
+                <TextBlock x:Name="ArrowText1" Margin="0,0,25,0" Text="Vi forbereder" TextWrapping="Wrap" Foreground="White" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                <Grid Canvas.ZIndex="4" Margin="-23,0,0,-450" Width="40" HorizontalAlignment="Left">
+                	<Path Stroke="{StaticResource SplitterBackground}" Margin="1,0,0,0" UseLayoutRounding="False" Data="M6.8041239,25 L125.19588,25" StrokeThickness="30" StrokeEndLineCap="Triangle" Stretch="Fill" RenderTransformOrigin="0.606,0.533" VerticalAlignment="Top" />
+                	<Path x:Name="ProcesItem0" Margin="0,0,8.667,0" UseLayoutRounding="False" Data="M6.8041239,25 L125.19588,25" StrokeThickness="30" StrokeEndLineCap="Triangle" Stretch="Fill" StrokeStartLineCap="Square" />
+                </Grid>
+            </Grid>
+            <Grid x:Name="Fase2" Canvas.ZIndex="2" Margin="-40,0,0,0" Width="140" VerticalAlignment="Top">
+                <Path Stroke="{StaticResource SplitterBackground}" Margin="0,0,0.006,0" UseLayoutRounding="False" Data="M6.8041239,25 L125.19588,25" StrokeThickness="30" StrokeEndLineCap="Triangle" Stretch="Fill" StrokeStartLineCap="Square" RenderTransformOrigin="0.606,0.533" />
+                <Path x:Name="ProcesItem2" Stroke="{StaticResource DongDarkGreen}" Margin="0,0,8.667,0" UseLayoutRounding="False" Data="M6.8041239,25 L125.19588,25" StrokeThickness="30" StrokeEndLineCap="Triangle" Stretch="Fill" StrokeStartLineCap="Square" />
+                <TextBlock x:Name="ArrowText2" Margin="0,0,25,0" Text="Vi graver" TextWrapping="Wrap" Foreground="White" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                <Grid Canvas.ZIndex="4" Margin="0,0,0,-450" Width="40" HorizontalAlignment="Left">
+                	<Path Stroke="{StaticResource SplitterBackground}" Margin="0" UseLayoutRounding="False" Data="M6.8041239,25 L125.19588,25" StrokeThickness="30" StrokeEndLineCap="Triangle" Stretch="Fill" StrokeStartLineCap="Square" RenderTransformOrigin="0.606,0.533" VerticalAlignment="Top" />
+                	<Path x:Name="ProcesItem5" Margin="0,0,8.667,0" UseLayoutRounding="False" Data="M6.8041239,25 L125.19588,25" StrokeThickness="30" StrokeEndLineCap="Triangle" Stretch="Fill" StrokeStartLineCap="Square" />
+                </Grid>
+            </Grid>
+            <Grid x:Name="Fase3" Canvas.ZIndex="1" Margin="-40,0,0,0" Width="140" VerticalAlignment="Top">
+                <Path Stroke="{StaticResource SplitterBackground}" Margin="0,0,0.006,0" UseLayoutRounding="False" Data="M6.8041239,25 L125.19588,25" StrokeThickness="30" StrokeEndLineCap="Triangle" Stretch="Fill" StrokeStartLineCap="Square" RenderTransformOrigin="0.606,0.533" />
+                <Path x:Name="ProcesItem3" Stroke="{StaticResource DongDarkGreen}" Margin="0,0,8.667,0" UseLayoutRounding="False" Data="M6.8041239,25 L125.19588,25" StrokeThickness="30" StrokeEndLineCap="Triangle" Stretch="Fill" StrokeStartLineCap="Square" />
+                <TextBlock x:Name="ArrowText3" Margin="0,0,25,0" Text="Vi tilslutter" TextWrapping="Wrap" Foreground="White" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                <Grid Canvas.ZIndex="4" Margin="0,0,0,-450" Width="40" HorizontalAlignment="Left">
+                	<Path Stroke="{StaticResource SplitterBackground}" Margin="0" UseLayoutRounding="False" Data="M6.8041239,25 L125.19588,25" StrokeThickness="30" StrokeEndLineCap="Triangle" Stretch="Fill" StrokeStartLineCap="Square" RenderTransformOrigin="0.606,0.533" VerticalAlignment="Top" />
+                	<Path x:Name="ProcesItem6" Margin="0,0,8.667,0" UseLayoutRounding="False" Data="M6.8041239,25 L125.19588,25" StrokeThickness="30" StrokeEndLineCap="Triangle" Stretch="Fill" StrokeStartLineCap="Square" />
+                </Grid>
+            </Grid>
+            <Grid x:Name="Fase4" Canvas.ZIndex="0" Margin="-40,0,0,0" Width="140" VerticalAlignment="Top">
+                <Path Stroke="{StaticResource SplitterBackground}" Margin="0,0,0.006,0" UseLayoutRounding="False" Data="M6.8041239,25 L125.19588,25" StrokeThickness="30" StrokeEndLineCap="Triangle" Stretch="Fill" StrokeStartLineCap="Square" RenderTransformOrigin="0.606,0.533" />
+                <Path x:Name="ProcesItem4" Stroke="{StaticResource DongDarkGreen}" Margin="0,0,8.667,0" UseLayoutRounding="False" Data="M6.8041239,25 L125.19588,25" StrokeThickness="30" StrokeEndLineCap="Triangle" Stretch="Fill" StrokeStartLineCap="Square" />
+                <TextBlock x:Name="ArrowText4" Margin="0,0,25,0" Text="Vi afslutter" TextWrapping="Wrap" Foreground="White" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                <Grid Canvas.ZIndex="4" Margin="0,0,0,-450" Width="40" HorizontalAlignment="Left">
+                	<Path Stroke="{StaticResource SplitterBackground}" Margin="0" UseLayoutRounding="False" Data="M6.8041239,25 L125.19588,25" StrokeThickness="30" StrokeEndLineCap="Triangle" Stretch="Fill" StrokeStartLineCap="Square" RenderTransformOrigin="0.606,0.533" VerticalAlignment="Top" />
+                	<Path x:Name="ProcesItem7" Margin="0,0,8.667,0" UseLayoutRounding="False" Data="M6.8041239,25 L125.19588,25" StrokeThickness="30" StrokeEndLineCap="Triangle" Stretch="Fill" StrokeStartLineCap="Square" />
+                </Grid>
+            </Grid>
+        </StackPanel>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,10 @@
+C:\dong_tfs\Projects\DONGEnergy.SD.Portal.SLWebPartWrapper\DONGEnergy.SD.Portal.SLWebpartWrapper\KabelWeb\bin\KabelWeb.dll
+C:\dong_tfs\Projects\DONGEnergy.SD.Portal.SLWebPartWrapper\DONGEnergy.SD.Portal.SLWebpartWrapper\KabelWeb\bin\KabelWeb.pdb
+C:\dong_tfs\Projects\DONGEnergy.SD.Portal.SLWebPartWrapper\DONGEnergy.SD.Portal.SLWebpartWrapper\KabelWeb\obj\Debug\ResolveAssemblyReference.cache
+C:\dong_tfs\Projects\DONGEnergy.SD.Portal.SLWebPartWrapper\DONGEnergy.SD.Portal.SLWebpartWrapper\KabelWeb\obj\Debug\KabelWeb.dll
+C:\dong_tfs\Projects\DONGEnergy.SD.Portal.SLWebPartWrapper\DONGEnergy.SD.Portal.SLWebpartWrapper\KabelWeb\obj\Debug\KabelWeb.pdb
+C:\dong_tfs\KabelWeb\KabelWeb\bin\KabelWeb.dll
+C:\dong_tfs\KabelWeb\KabelWeb\bin\KabelWeb.pdb
+C:\dong_tfs\KabelWeb\KabelWeb\obj\Debug\ResolveAssemblyReference.cache
+C:\dong_tfs\KabelWeb\KabelWeb\obj\Debug\KabelWeb.dll
+C:\dong_tfs\KabelWeb\KabelWeb\obj\Debug\KabelWeb.pdb
