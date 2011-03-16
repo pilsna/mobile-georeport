@@ -200,6 +200,6 @@
     </VisualStudio>
   </ProjectExtensions>
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(TargetDir)$(TargetName).xap" "$(SolutionDir)SLWebPartWrapper\Source\Layouts\" /R /Z /Q /Y /K</PostBuildEvent>
+    <PostBuildEvent>xcopy "$(TargetDir)$(TargetName).xap" "$(SolutionDir)KabelWeb\Content\" /R /Z /Q /Y /K</PostBuildEvent>
   </PropertyGroup>
 </Project>
