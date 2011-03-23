@@ -3,3 +3,4 @@ _ReSharper.*
 *.ReSharper.user
 *.suo
 *.suo
+*/obj/Debug/*
