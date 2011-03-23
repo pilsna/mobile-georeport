@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/InformiGIS.SML.Services" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/InformiGIS.SML.Services" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://osi1046.de-prod.dk:6572/ditgadelys/ServiceProxy.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="NotificationDocument">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:NotificationDocumentBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="NotificationDocument" nillable="true" type="tns:NotificationDocument" />
+  <xs:complexType name="NotificationDocumentBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedByProfile" type="tns:SmlUserProfile" />
+      <xs:element minOccurs="0" name="CreatedByUser" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GisObjId" type="xs:int" />
+      <xs:element minOccurs="0" name="JobCodePriority" type="tns:NotificationPriority" />
+      <xs:element minOccurs="0" name="NotifyMailAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NotifyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NotifyPhoneNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ObjectType" type="tns:SapObjectType" />
+      <xs:element minOccurs="0" name="Partner2Nr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Point" nillable="true" type="tns:Point" />
+      <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResponsibleAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResponsibleCarReg" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResponsibleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResponsiblePhoneNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SapObjId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SapQmnum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SmlNotifNr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SmlNotificationType" type="tns:NotificationType" />
+      <xs:element minOccurs="0" name="SmlRefTo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TimeClosed" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TimeCreated" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TimeLastEdited" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TimeStarted" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NotificationDocumentBase" nillable="true" type="tns:NotificationDocumentBase" />
+  <xs:simpleType name="SmlUserProfile">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="C" />
+      <xs:enumeration value="I" />
+      <xs:enumeration value="K" />
+      <xs:enumeration value="P" />
+      <xs:enumeration value="S" />
+      <xs:enumeration value="T" />
+      <xs:enumeration value="U" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SmlUserProfile" nillable="true" type="tns:SmlUserProfile" />
+  <xs:simpleType name="NotificationPriority">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Low" />
+      <xs:enumeration value="Normal" />
+      <xs:enumeration value="High" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="NotificationPriority" nillable="true" type="tns:NotificationPriority" />
+  <xs:simpleType name="SapObjectType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="TA4" />
+      <xs:enumeration value="CU" />
+      <xs:enumeration value="LYG" />
+      <xs:enumeration value="STR" />
+      <xs:enumeration value="TAE" />
+      <xs:enumeration value="TA3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SapObjectType" nillable="true" type="tns:SapObjectType" />
+  <xs:complexType name="Point">
+    <xs:sequence>
+      <xs:element name="X" type="xs:double" />
+      <xs:element name="Y" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Point" nillable="true" type="tns:Point" />
+  <xs:simpleType name="NotificationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="I" />
+      <xs:enumeration value="S" />
+      <xs:enumeration value="C" />
+      <xs:enumeration value="P" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="NotificationType" nillable="true" type="tns:NotificationType" />
+  <xs:complexType name="NotificationBorgerDocument">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:NotificationDocumentBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="NotificationBorgerDocument" nillable="true" type="tns:NotificationBorgerDocument" />
+  <xs:complexType name="NotificationResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:FaultInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="OperationCompleted" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="NotificationResult" nillable="true" type="tns:NotificationResult" />
+  <xs:complexType name="FaultInfo">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Errors" nillable="true" type="q1:ArrayOfstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FaultInfo" nillable="true" type="tns:FaultInfo" />
+  <xs:complexType name="NotificationDocumentResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:NotificationResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="NotificationBorgerDocument" nillable="true" type="tns:NotificationBorgerDocument" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="NotificationDocumentResult" nillable="true" type="tns:NotificationDocumentResult" />
+</xs:schema>

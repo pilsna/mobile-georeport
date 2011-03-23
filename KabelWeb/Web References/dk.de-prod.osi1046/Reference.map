@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://osi1046.de-prod.dk:6572/ditgadelys/ServiceProxy.svc?wsdl" filename="ServiceProxy.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://osi1046.de-prod.dk:6572/ditgadelys/ServiceProxy.svc?xsd=xsd0" filename="ServiceProxy.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://osi1046.de-prod.dk:6572/ditgadelys/ServiceProxy.svc?xsd=xsd1" filename="ServiceProxy0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://osi1046.de-prod.dk:6572/ditgadelys/ServiceProxy.svc?xsd=xsd2" filename="ServiceProxy1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://osi1046.de-prod.dk:6572/ditgadelys/ServiceProxy.svc?xsd=xsd3" filename="ServiceProxy2.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://osi1046.de-prod.dk:6572/ditgadelys/ServiceProxy.svc?wsdl=wsdl0" filename="ServiceProxy0.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>

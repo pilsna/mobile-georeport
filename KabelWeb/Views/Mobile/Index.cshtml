@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Mobil";
+    Layout = "~/Views/Shared/_MobileLayout.cshtml";
+}
+
+<div data-role="page" id="geolocation" data-theme="a">
+    <div data-role="header">
+		<h1>Fejlmeld en gadelygte</h1>
+	</div>
+
+	<div data-role="content">	
+		<p>Din position er: x=<span id="xcoord"></span>, y=<span id="xcoord"></span> </p>
+	</div>
+
+	<div data-role="footer">
+		<h4><a href="http://www.informi.dk">Informi GIS</a></h4>
+    </div>
+</div>
+
+<div data-role="page" id="notification" data-theme="a">
+    <div data-role="header">
+	    <h1>Fejlen er registreret</h1>
+        <a href="../../" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-right geolocation">Home</a> 
+    </div>
+    <div data-role="content">	
+        <p>Din fejlmelding er registreret.</p>
+	</div>
+    <div data-role="footer">
+        <h4><a href="http://www.informi.dk">Informi GIS</a></h4>
+	</div>
+    
+</div>
