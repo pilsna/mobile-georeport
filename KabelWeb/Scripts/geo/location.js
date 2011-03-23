@@ -26,6 +26,15 @@ $(document).ready(
 				$('#accuracy').text(startPos.coords.accuracy);
 			}, 
 			function(error) {
+			var msg;
+			switch (error.code) {
+				case 0: 
+				case 1: 
+				case 2: 
+				case 3: 
+				 
+				
+			}
 			alert('Error occurred. Error code: ' + error.code);
 			// error.code can be:
 			//   0: unknown error
