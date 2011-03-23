@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="KabelWeb.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="KabelWeb_dk_de_prod_osi1046_ServiceProxy" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://osi1046.de-prod.dk:6572/ditgadelys/ServiceProxy.svc</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
