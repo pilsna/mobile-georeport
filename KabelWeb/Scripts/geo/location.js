@@ -8,11 +8,8 @@ else {
 $(document).ready(function () {
 	$('#xcoord').text('0');
 	$('#ycoord').text('0');
-	$('#accuracy').text('0');
-
-	
-	});
-
+	$('#accuracy').text('0');	
+});
 
 $(document).ready(
 	function () {
@@ -26,22 +23,29 @@ $(document).ready(
 				$('#accuracy').text(startPos.coords.accuracy);
 			}, 
 			function(error) {
-			var msg;
-			switch (error.code) {
-				case 0: 
-				case 1: 
-				case 2: 
-				case 3: 
-				 
-				
+				var msg;
+				switch (error.code) {
+					case 0: 
+						msg = 'Der opstod en fejl';
+						break;
+					case 1: 
+						msg = 'Adgang til position nægtet';
+						break;
+					case 2: 
+						msg = 'Position ikke tilgængelig';
+						break;
+					case 3: 
+						msg = 'Timeout';
+						break;
+				}
+            
+			$('#error').text(msg + ' ' + error.code);
+            },
+			{
+				maximumAge: 1000,
+				enableHighAccuracy: true,
 			}
-			alert('Error occurred. Error code: ' + error.code);
-			// error.code can be:
-			//   0: unknown error
-			//   1: permission denied
-			//   2: position unavailable (error response from locaton provider)
-			//   3: timed out
-			}
+			
 		);
 	}
 );
