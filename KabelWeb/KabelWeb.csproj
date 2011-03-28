@@ -168,7 +168,6 @@
     </None>
     <Content Include="Views\Mobile\Index.cshtml" />
     <Content Include="Views\Shared\_MobileLayout.cshtml" />
-    <Content Include="Views\Mobile\Create.cshtml" />
     <None Include="Web References\dk.de-prod.osi1046\NotificationResult.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>

@@ -17,32 +17,7 @@ namespace KabelWeb.Controllers
             return View();
         }
 
-        //
-        // GET: /Mobile/Create
-
-        public ActionResult Create()
-        {
-            return View();
-        } 
-
-        //
-        // POST: /Mobile/Create
-
-        [HttpPost]
-        public ActionResult Create(NotificationModel notification)
-        {
-            try
-            {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-        
+     
        
     }
 }
