@@ -27,7 +27,7 @@ function notify() {
 	$.ajax({
 	  url: 'Notification/Create',
 	  success:function(data){
-		alert(data);
+		$('#successmessage').text(data);
 	  }
 	});
 }
