@@ -1,4 +1,5 @@
-﻿    @{
+﻿@model KabelWeb.Models.NotificationModel
+    @{
     ViewBag.Title = "Mobil";
     Layout = "~/Views/Shared/_MobileLayout.cshtml";
 }
@@ -29,19 +30,22 @@
 	</div>
 
 	<div data-role="footer" style="position:absolute; bottom: 0; left:0;">
-		<h4><a href="mailto:nilsr@informi.dk" class="ui-link-inherit">Send mail</a></h4>
+		<h4><a href="mailto:nilsr@informi.dk" class="ui-link-inherit">Feedback</a></h4>
     </div>
 </div>
 
 <div data-role="page" id="notification" data-theme="a">
     <div data-role="header">
-	    <h1>Fejl registreret</h1>
+	    <h1>Fejlmeld</h1>
     </div>
     <div data-role="content">	
+        <p>Din fejlmelding er modtaget.</p>
         <p><span id="successmessage"></span></p>
+        <ul id="resultlist"></ul>
 	</div>
+
     <div data-role="footer" style="position:absolute; bottom: 0; left:0;">
-        <h4><a href="mailto:nilsr@informi.dk" class="ui-link-inherit">Send mail</a></h4>
+        <h4><a href="mailto:nilsr@informi.dk" class="ui-link-inherit">Feedback</a></h4>
 	</div>
     
 </div>

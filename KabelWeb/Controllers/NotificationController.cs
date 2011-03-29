@@ -15,7 +15,7 @@ namespace KabelWeb.Controllers
         {
             var msg = notification.Message;
 
-            return Json(msg);
+            return Json(notification);
         }
 
     }

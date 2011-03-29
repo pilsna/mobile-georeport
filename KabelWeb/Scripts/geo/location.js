@@ -46,8 +46,19 @@ function notify() {
 	  url: 'Notification/Create',
 	  success:function(data){
 		$('#successmessage').text(data);
+		renderListItem($('#resultlist'), data);
+		
 	  }
 	});
+}
+function renderListItem(list, notification) {
+	function renderHtml(kommentar, text) {
+		list.append('<li>' + kommentar + text + '</li>');
+	}
+	renderHtml('', notification.Message);
+	renderHtml('position ', notification.X + ', ' + notification.Y + ' indenfor ' + notification.Accuracy + ' m');
+	
+	
 }
 
 function startWatchPosition() {
