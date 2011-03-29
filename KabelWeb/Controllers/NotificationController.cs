@@ -11,7 +11,6 @@ namespace KabelWeb.Controllers
     public class NotificationController : AsyncController
     {
         // POST: /Notification/
-        [HttpPost]
         public JsonResult Create(NotificationModel notification)
         {
             var msg = notification.Message;
@@ -19,11 +18,6 @@ namespace KabelWeb.Controllers
             return Json(msg);
         }
 
-        [HttpGet]
-        public ActionResult Create()
-        {
-            return Json("Tak, fejlen er indberettet", JsonRequestBehavior.AllowGet);
-        } 
     }
 
 }
