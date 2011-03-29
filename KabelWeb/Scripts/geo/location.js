@@ -1,8 +1,8 @@
 ﻿if (navigator.geolocation) {
-    console.log('Geolocation is supported!');
+    console.log('Geolocation is supported');
 }
 else {
-    console.log('Geolocation is not supported for this Browser/OS version yet.');
+    console.log('Geolocation is not supported for this Browser/OS version');
 }
 
 $(document).ready(initialize);
@@ -28,7 +28,6 @@ function getData() {
 			Error: $('error').text()
 		}
 	};
-	//data.notification.Message = 'test3';
 	return data;
 }
 
@@ -65,43 +64,6 @@ function startWatchPosition() {
 	watchPosition(20, 5);
 }
 
-function getPosition() {
-	var startPos;
-	navigator.geolocation.getCurrentPosition(
-		function (position) {
-			startPos = position;
-			console.log(startPos.coords);
-			$('#xcoord').text(startPos.coords.latitude.toFixed(2));
-			$('#ycoord').text(startPos.coords.longitude.toFixed(2));
-			$('#accuracy').text(startPos.coords.accuracy.toFixed(2));
-		}, 
-		function(error) {
-			
-			var msg;
-			switch (error.code) {
-				case 0: 
-					msg = 'Der opstod en fejl';
-					break;
-				case 1: 
-					msg = 'Adgang til position nægtet';
-					break;
-				case 2: 
-					msg = 'Position ikke tilgængelig';
-					break;
-				case 3: 
-					msg = 'Timeout';
-					break;
-			}
-		
-		$('#error').text(msg + ' ' + error.code);
-		},
-		{
-			maximumAge: 1000,
-			enableHighAccuracy: true,
-		}
-		
-	);
-}
 
 function watchPosition(times, maxAccuracy) {
 	var startPos;

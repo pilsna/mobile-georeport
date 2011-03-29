@@ -8,7 +8,7 @@ using KabelWeb.Models;
 
 namespace KabelWeb.Controllers
 {
-    public class NotificationController : AsyncController
+    public class NotificationController : Controller
     {
         // POST: /Notification/
         public JsonResult Create(NotificationModel notification)

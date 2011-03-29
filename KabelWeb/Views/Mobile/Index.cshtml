@@ -30,7 +30,7 @@
 	</div>
 
 	<div data-role="footer" style="position:absolute; bottom: 0; left:0;">
-		<h4><a href="mailto:nilsr@informi.dk" class="ui-link-inherit">Feedback</a></h4>
+		<h4><a href="mailto:nilsr@informi.dk?subject=Feedback&body=Hej" class="ui-link-inherit">Feedback</a></h4>
     </div>
 </div>
 
@@ -42,10 +42,14 @@
         <p>Din fejlmelding er modtaget.</p>
         <p><span id="successmessage"></span></p>
         <ul id="resultlist"></ul>
+        <br />
+        <p><a href="@Html.Encode("sms://+4561335561?body=http://kabel.apphb.com/Mobile ser rigtig godt ud!")" >Send en SMS</a></p>
+        <br />
+        <br />
 	</div>
 
     <div data-role="footer" style="position:absolute; bottom: 0; left:0;">
-        <h4><a href="mailto:nilsr@informi.dk" class="ui-link-inherit">Feedback</a></h4>
+        <h4><a href="mailto:nilsr@informi.dk?subject=Feedback&body=Hej" class="ui-link-inherit">Feedback</a></h4>
 	</div>
     
 </div>
