@@ -9,7 +9,9 @@
 	</div>
 
 	<div data-role="content">	
-		<p style="display:none" id="locationinfo">Din position er <span id="xcoord">??</span>, <span id="ycoord">??</span> med præcision på <span id="accuracy">??</span> m</p>
+		<div id="locationinfo">
+            <p >Din position er fundet <span id="xcoord">??</span>, <span id="ycoord">??</span>, præcision <span id="accuracy">??</span> m</p>
+        </div>
         <p><span style="color:Navy" id="error"></span></p>
         <p style="display:none"><span id="callcount"></span></p>
         <p>
@@ -18,13 +20,13 @@
         </p>
         <p><input type="email" id="email" name="email" /></p>
         <br />
-        <p><a href="#notification" data-role="button" id="submitbutton"  data-transition="slide">OK</a></p>
+        <p><a href="#notification" data-role="button" id="submitbutton"  data-transition="slide">Send</a></p>
         <br />
         <br />
 	</div>
 
 	<div data-role="footer" style="position:absolute; bottom: 0; left:0;">
-		<h4><a href="mailto:nilsr@informi.dk&amp;subject=Fejlmelding&amp;body=Hej!" class="ui-link-inherit">Send en kommentar</a></h4>
+		<h4><a href="mailto:nilsr@informi.dk&amp;subject=Fejlmelding&amp;body=Hej!" class="ui-link-inherit">Send mail</a></h4>
     </div>
 </div>
 
@@ -36,7 +38,7 @@
         <p><span id="successmessage"></span></p>
 	</div>
     <div data-role="footer" style="position:absolute; bottom: 0; left:0;">
-        <h4><a href="mailto:nilsr@informi.dk&amp;subject=Fejlmelding&amp;body=Hej!" class="ui-link-inherit">Send en kommentar</a></h4>
+        <h4><a href="mailto:nilsr@informi.dk&amp;subject=Fejlmelding&amp;body=Hej!" class="ui-link-inherit">Send mail</a></h4>
 	</div>
     
 </div>

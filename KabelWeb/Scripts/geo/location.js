@@ -10,6 +10,7 @@ $(document).ready(initialize);
 $(document).ready(startWatchPosition);
 
 function initialize() {
+	$('#locationinfo').hide();
 	$('#xcoord').text('');
 	$('#ycoord').text('');
 	$('#accuracy').text('');	
