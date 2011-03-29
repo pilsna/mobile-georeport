@@ -12,11 +12,11 @@ namespace KabelWeb.Controllers
     {
         // POST: /Notification/
         [HttpPost]
-        public ActionResult Create(NotificationModel notification)
+        public JsonResult Create(NotificationModel notification)
         {
             var msg = notification.Message;
 
-            return Json("message: Success");
+            return Json(msg);
         }
 
         [HttpGet]

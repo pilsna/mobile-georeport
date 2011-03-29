@@ -9,21 +9,22 @@
 	</div>
 
 	<div data-role="content">	
-		<p>Din position er <span id="xcoord">??</span>, <span id="ycoord">??</span> </p>
-		<p>Præcisionen er <span id="accuracy">??</span> m</p>
-        <p><span id="error"></span></p>
-        <p><span id="callcount"></span></p>
-        <p><label for="description">Beskrivelse</label>
-            <input type="text" name="description" id="description" /> 
+		<p style="display:none" id="locationinfo">Din position er <span id="xcoord">??</span>, <span id="ycoord">??</span> med præcision på <span id="accuracy">??</span> m</p>
+        <p><span style="color:Navy" id="error"></span></p>
+        <p style="display:none"><span id="callcount"></span></p>
+        <p>
+            <label for="description">Beskriv fejlen:</label>
+            <textarea name="description" id="description" ></textarea>
         </p>
-        <p><a href="#notification" data-role="button" id="submitbutton"  data-transition="slide">OK</a></p>
+        <p><input type="email" id="email" name="email" /></p>
         <br />
+        <p><a href="#notification" data-role="button" id="submitbutton"  data-transition="slide">OK</a></p>
         <br />
         <br />
 	</div>
 
 	<div data-role="footer" style="position:absolute; bottom: 0; left:0;">
-		<h4><a href="http://www.informi.dk">Informi GIS</a></h4>
+		<h4><a href="mailto:nilsr@informi.dk&amp;subject=Fejlmelding&amp;body=Hej!" class="ui-link-inherit">Send en kommentar</a></h4>
     </div>
 </div>
 
@@ -35,7 +36,7 @@
         <p><span id="successmessage"></span></p>
 	</div>
     <div data-role="footer" style="position:absolute; bottom: 0; left:0;">
-        <h4><a href="http://www.informi.dk">Informi GIS</a></h4>
+        <h4><a href="mailto:nilsr@informi.dk&amp;subject=Fejlmelding&amp;body=Hej!" class="ui-link-inherit">Send en kommentar</a></h4>
 	</div>
     
 </div>
