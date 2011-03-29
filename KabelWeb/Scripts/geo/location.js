@@ -33,10 +33,7 @@ function getData() {
 }
 
 function submitNotification() {
-	$.mobile.pageLoading();
     notify();
-	$.mobile.pageLoading('true');
-    
 	$('#submitbutton').unbind();
 }
 
