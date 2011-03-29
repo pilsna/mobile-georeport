@@ -60,7 +60,6 @@ function getPosition() {
 		function (position) {
 			startPos = position;
 			console.log(startPos.coords);
-			$('#locationinfo').show();
 			$('#xcoord').text(startPos.coords.latitude.toFixed(2));
 			$('#ycoord').text(startPos.coords.longitude.toFixed(2));
 			$('#accuracy').text(startPos.coords.accuracy.toFixed(2));
@@ -99,14 +98,15 @@ function watchPosition(times, maxAccuracy) {
 	console.log(callCount);
 	var watchID = navigator.geolocation.watchPosition(
 		function (position) {
+			$('#locationinfo').show();
 			console.log('watchPosition called ' + callCount + ' times');
 			$('#error').text('');
 			callCount += 1;
 			startPos = position;
 			console.log(startPos.coords);
-			$('#xcoord').text(startPos.coords.latitude);
-			$('#ycoord').text(startPos.coords.longitude);
-			$('#accuracy').text(startPos.coords.accuracy);
+			$('#xcoord').text(startPos.coords.latitude.toFixed(2));
+			$('#ycoord').text(startPos.coords.longitude.toFixed(2));
+			$('#accuracy').text(startPos.coords.accuracy.toFixed(2));
 			$('#callcount').text(callCount);
 			if (watchID === times || startPos.coords.accuracy < maxAccuracy) {
 				navigator.geolocation.clearWatch(watchID);
